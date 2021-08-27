@@ -1,0 +1,8 @@
+package com.android.core.interceptor.file
+
+import com.android.core.data.SRFileRepository
+import com.android.core.domain.SRFile
+
+class AddFile(private val srFileRepository: SRFileRepository){
+    suspend operator fun invoke(srFile: SRFile) = srFileRepository.addFile(srFile)
+}

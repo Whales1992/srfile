@@ -1,8 +1,7 @@
 package com.android.srfileutil
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.android.srfileutil.R
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

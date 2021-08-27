@@ -1,10 +1,9 @@
 package com.android.core.data
 
-import com.android.core.domain.SRFile
+import com.google.gson.JsonObject
 
 interface IDataSource {
-    suspend fun add(srFile: SRFile) : SRFile
-    suspend fun remove(srFile: SRFile) : Boolean
-    suspend fun update(srFile: SRFile) : SRFile
-    suspend fun findOne(srFile: SRFile) : SRFile
+    suspend fun isLoggedIn() : Boolean
+    suspend fun loginIn(userObject: JsonObject) : Boolean
+    suspend fun logOut() : Boolean
 }

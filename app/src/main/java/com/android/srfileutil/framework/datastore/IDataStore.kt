@@ -1,4 +1,4 @@
-package com.android.srfileutil.util.datastore
+package com.android.srfileutil.framework.datastore
 
 import kotlinx.coroutines.flow.Flow
 

@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.splash.SplashActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/auth_fragment_container_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.android.srfileutil.presentation.splash.SplashFragment" />
+    <ImageView
+        android:contentDescription="@string/app_logo_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_folder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
